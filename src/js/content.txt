@@ -1,0 +1,137 @@
+  /*
+   *
+   *  Hi. I’m Zach Milne. I’m a JavaScript developer.
+   *  Do you want to write some code together?
+   *  That's why your here isn't it?
+   *  Great, first let’s clean this place up a little bit.
+   *  Maybe a little color?
+   */
+
+  body {
+    transition: background-color 1s;
+    background-color: #6DB1C7;
+  }
+
+  /*  Ok, that was cool, but let's keep going.
+   *  This output needs a display box for the comments and CSS.
+   */
+
+  pre:first-child {
+    overflow: auto;
+    background-color: black;
+    height: 300px;
+    color: white;
+  }
+
+  /*  Alright! Not bad. now we're going to add color to the CSS.
+   */
+
+  .comment       {color: #857F6B; font-style: italic;}
+  .selector      {color: #E69F0F;}
+  .key           {color: #64D5EA;}
+  .value         {color: #BE84F2;}
+  .value .px     {color: #F92772;}
+
+ /*  That's a little better. Moving it to the right will make room
+  *  for some other things though.
+  */
+
+  pre:first-child {
+    border-radius: 5px;
+    height: 600px;
+    width: 50%;
+    left: 45%;
+    -webkit-box-shadow: -14px 14px 11px 0px rgba(21,19,25,0.8);
+    -moz-box-shadow: -14px 14px 11px 0px rgba(21,19,25,0.8);
+    box-shadow: -14px 14px 11px 0px rgba(21,19,25,0.8);
+  }
+
+  /*
+   *  What this program is doing under the hood
+   *
+   *  is reading a plain text file and writing it character by
+   *
+   *  character to both a PRE tag and a STYLE tag. I've made
+   *
+   *  the source code available on GitHub for anyone
+   *
+   *  who wants to build something even better on their own.
+   *
+   *  I also built a simple calculator, which I'll show you in a
+   *
+   *  second. I just didn't think the world had enough of them,
+   *
+   *  so I added one more. Here you go.
+   *
+   * I will write the styles a little quicker this time.
+   *
+   */
+
+ .wrap {
+   width: 600px;
+   max-width: 30%;
+   margin: 20px auto 0;
+   color: white;
+   font-family: sans-serif;
+
+ }
+ .calc_body{
+   background-color: #191919;
+   padding-top: 2%;
+   padding-bottom: 1%;
+   -webkit-box-shadow: -14px 14px 11px 0px rgba(21,19,25,0.8);
+   -moz-box-shadow: -14px 14px 11px 0px rgba(21,19,25,0.8);
+    box-shadow: -14px 14px 11px 0px rgba(21,19,25,0.8);
+ }
+ .button{
+   background-color: #222222;
+   width: 22.5%;
+   float: left;
+   margin: 1% 0 1% 2%;
+   text-align: center;
+   font-size: xx-large;
+   display: inline-block;
+   padding: 4% 0;
+ }
+ div .gray {
+    background-color: #4E4E4E;
+  }
+  div .red {
+    background-color: #FE3741;
+  }
+ .zero {
+   width: 47%;
+ }
+ #display {
+   width: 91%;
+   margin: 0 0 1% 2%;
+   background-color: #222222;
+   font-size: xx-large;
+   color: white;
+   text-align: right;
+   padding: 4% 5% 4% 0 ;
+   word-wrap: break-word;
+ }
+ div .button{
+   transition: none;
+   -moz-transition: none;
+   -webkit-transition: none;
+   -o-transition: none;
+ }
+
+  /*
+   *  Go ahead and try it out. It's nothing fancy, but it
+   *  works!
+   *
+   *  The next project I'm working on is a data visualization
+   *
+   *  dashboard for a startup that collects behavioral health
+   *
+   *  data from it's users to help them lower their risk for
+   *
+   *  medical expenses.
+   *
+   *  I'll post that portfolio work here when it's finished.
+   *
+   *  Thanks for sticking around!
+   */

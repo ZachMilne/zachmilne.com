@@ -1,0 +1,129 @@
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*==========================================================
+ *THE PRE
+ ==========================================================*/
+pre {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  left: 0;
+  transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -webkit-transition: all 1.5s;
+  -o-transition: all 1.5s;
+
+}
+/* END PRE */
+
+
+/* ==========================================================================
+   calculator
+   ========================================================================== */
+.wrap {
+  display: inline-block;
+  position: absolute;
+  left: 7.5%;
+}
+div {
+  transition: all 750ms;
+  -moz-transition: all 750ms;
+  -webkit-transition: all 750ms;
+  -o-transition: all 750ms;
+}
+.button:hover{
+  cursor: pointer;
+}
+.button:active{
+  -webkit-box-shadow: inset 2px 2px .3em 0px rgba(0,0,0,1);
+  -moz-box-shadow: inset 2px 2px .3em 0px rgba(0,0,0,1);
+  box-shadow: inset 2px 2px .3em 0px rgba(0,0,0,1);
+}
+
+/* END CALCULATOR*/
+
+.hidden { display: none !important; }
+
+
+/* media queries*/
+
+@media only screen and (max-width: 1050px) {
+  div .button { font-size: x-large; }
+  div #display { font-size: x-large; }
+}
+
+@media only screen and (max-width: 950px) {
+  #the-pre {
+    width: 57.5%;
+    left: 40%;
+  }
+  div .wrap { left: 5%; }
+}
+
+@media only screen and (max-width: 805px) {
+  #the-pre {
+    width: 65%;
+    left: 32.5%;
+  }
+  div .wrap {
+    max-width: 27%;
+    left: 2.5%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  div .button { font-size: large; }
+  div #display { font-size: large; }
+  #the-pre {
+    width: 90%;
+    left: 5%;
+    height: 250px;
+  }
+  div .wrap {
+    display: block;
+    position: relative;
+    max-width: 65%;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .button { font-size: medium; }
+  div #display { font-size: medium; }
+}
